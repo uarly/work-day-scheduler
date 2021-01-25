@@ -6,7 +6,9 @@ $(".btn").on("click",function(){
 })
 var today = moment()
 var hour = moment().hours()
-console.log(today,hour)
+console.log("Current Day",today,hour)
+
+
 $("#currentDay").text(today)
 for(let i=9;i<18;i++){
     $("#"+i+"-txt").val(localStorage.getItem(i))
